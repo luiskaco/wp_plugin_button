@@ -147,10 +147,11 @@
     outline: none;
   }
 
-  .input_select option {
+ .input_select option {
     font-weight:normal;
-    font-size: 1.3rem;
-    padding:30px;
+    font-size: 1.5rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-family: "Segoe UI", Arial, sans-serif;
     background-color: rgba(111, 39, 162, 1);
     color:#fff;
@@ -168,6 +169,7 @@
         box-shadow: 0 0 10px 100px #1882A8 inset;
   }
 
+
   /*btn*/
   .merck__input_button{
         text-align: center;
@@ -181,8 +183,6 @@
         background-color: #D65695;
         color:#fff;
         outline: none;
-
-
 
         font-weight: bold;
         font-family: "Segoe UI", Arial, sans-serif;
@@ -202,7 +202,14 @@
 
   .merck__input_button button:hover {
     background-color: #f72a8d;
+
   }
+
+  .merck__input_button [type=button]:focus, [type=submit]:focus, button:focus {
+    outline: none !important;
+  }
+
+
 
   .merck__input_button img{
       margin-left: 5px;

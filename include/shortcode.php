@@ -4,14 +4,14 @@
 if(! defined ('ABSPATH')) exit;
 
 /**
- *  Crea un shortcode, uso: [merckMap]
+ *  Crea un shortcode, uso: [shortcode_merckMap]
  */
 
 function merck_shortcode( $atts ){
 
     
     ?>  
-            <div class="merck__container">
+            <div class="merck__container" id="merck_container_plugin_id">
                 <div class="merck__content">   
      
                     <div>
@@ -22,17 +22,17 @@ domicilio, distrito, ciudad o región ingresando a:
                     </div>
                     <div class="merck__input_content">
 
-                        <select class="merck__input input_select">
-                            <option value="0">
+                        <select class="merck__input input_select" id="merck_map_select_id">
+                            <option class="options" selected value="0">
                                 Selecionar
                             </option>  
-                            <option value="Endocrinologo">
+                            <option class="options" value="Endocrinólogo">
                                 Endocrinólogo
                             </option>   
                         </select>
 
                         <div class="merck__input merck__input_button">
-                            <button type="button"> Buscar  <img src="https://i.postimg.cc/GpMcQvrQ/lupa.png" 
+                            <button type="button" id="merck_map_button_id"> Buscar  <img src="https://i.postimg.cc/GpMcQvrQ/lupa.png" 
                             alt=""></button>
                         </div>
                     </div> 
