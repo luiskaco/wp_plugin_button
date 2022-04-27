@@ -21,18 +21,19 @@ domicilio, distrito, ciudad o región ingresando a:
                         </h3>
                     </div>
                     <div class="merck__input_content">
-
-                        <select class="merck__input input_select" id="merck_map_select_id">
-                            <option class="options" selected value="0">
-                                Selecionar
-                            </option>  
-                            <option class="options" value="Endocrinólogo">
-                                Endocrinólogo
-                            </option>   
-                        </select>
+                        <div class="bg-select">
+                            <select class="merck__input input_select" id="merck_map_select_id">
+                                <option class="option" selected value="">
+                                    <span> Selecionar</span>
+                                </option>  
+                                <option class="option" value="Endocrinólogo">
+                                    <span>Endocrinólogo</span>
+                                </option>   
+                            </select>
+                        </div>
 
                         <div class="merck__input merck__input_button">
-                            <button type="button" id="merck_map_button_id"> Buscar  <img src="https://i.postimg.cc/GpMcQvrQ/lupa.png" 
+                            <button type="button" id="merck_map_button_id"> Buscar  <img src="https://i.postimg.cc/HnGZFLXQ/icono-lupa-16x16.png" 
                             alt=""></button>
                         </div>
                     </div> 

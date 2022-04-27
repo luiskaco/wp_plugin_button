@@ -6,7 +6,7 @@ El identificador usado para realizar logica condicional.
 #merck_container_plugin_id
 ```
 ### Shortcodoe 
-Este codigo puede ser usado para serel el wordpress
+Este codigo puede ser usado para el wordpress
 ```
 [shortcode_merckMap]
 ```

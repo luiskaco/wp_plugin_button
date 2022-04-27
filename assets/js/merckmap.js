@@ -4,7 +4,7 @@ jQuery( document ).ready( function() {
                 const merck_map_text = `“En estos momentos usted está abandonando el sitio web de Merck. Por favor tenga en cuenta que el sitio web hacia donde se dirige puede que no sea propiedad ni esté controlado por Merck y por lo tanto no estar sujeto a nuestras políticas”.`
                 const merck_map_query = `https://www.google.com/maps/search/?api=1&query=${merck_map_selectID}`
 
-                if(merck_map_selectID == 0){
+                if(merck_map_selectID == ""){
                     Swal.fire({
                         icon: 'error',
                         title: 'Oops...',

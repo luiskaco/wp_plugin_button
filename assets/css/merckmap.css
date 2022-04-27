@@ -47,7 +47,7 @@
     margin: auto;
     position: absolute;
 
-    background-image: url(https://i.postimg.cc/638scRbd/favorito.png);
+    background-image: url(https://i.postimg.cc/QxQVWnMm/Mujericono-90x90.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 70%;
@@ -104,8 +104,10 @@
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
-    linear-gradient(to bottom, #ffffff 0%,#f7f7f7 50%);
+   /* background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+    linear-gradient(to bottom, #ffffff 0%,#f7f7f7 50%);*/
+    background-image: url(https://i.postimg.cc/7Yx0wQ0F/FLECHA-VERD.png);
+    
     background-repeat: no-repeat, repeat;
     background-position: right .7em top 50%, 0 0;
     background-size: .65em auto, 100%;
@@ -115,7 +117,7 @@
 
     border-radius: 15px;
     box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
-    border-radius: 1em;
+   
     max-width: 100%; 
     box-sizing: border-box;
 
@@ -128,6 +130,7 @@
 @media(min-width:768px){
     .input_select{
         font-size: 1.5rem;
+   
     }
 }
 
@@ -137,7 +140,62 @@
 
   .input_select:hover {
     border-color: #888;
+    
   }
+
+  .input_select:focus{
+   /* border-radius: 15px 15px 0px 0px ;
+    background-color: red;*/
+  }
+
+ /* .bg-select:hover{
+    background-color: #6f27a2 !important;
+    -webkit-border-top-left-radius: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-topright: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+} */
+
+.bg-select{
+    position: relative;
+}
+
+.bg-select:after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #6f27a2;
+    left: 0;
+    bottom: 0;
+    /* -webkit-border-top-left-radius: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-topright: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; */
+}
+
+.bg-select:before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #6f27a2;
+    right: 0;
+    bottom: 0;
+    /* -webkit-border-top-left-radius: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-topright: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; */
+}
+
+
+
 
   .input_select:focus {
     border-color: #aaa;
@@ -147,26 +205,33 @@
     outline: none;
   }
 
- .input_select option {
+  .input_select option {
     font-weight:normal;
-    font-size: 1.5rem;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-family: "Segoe UI", Arial, sans-serif;
     background-color: rgba(111, 39, 162, 1);
     color:#fff;
-  
+    font-size: 34px !important;
+
+    -webkit-border-bottom-right-radius: 35px;
+    -webkit-border-bottom-left-radius: 35px;
+    -moz-border-radius-bottomright: 35px;
+    -moz-border-radius-bottomleft: 35px;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
   }
 
-  @media(min-width:768px){
-    .input_select option{
-        font-size: 1.6rem;
-    }
+  .input_select option span {
+      
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 1rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
-   
+
+
   .input_select option:hover {
-        box-shadow: 0 0 10px 100px #1882A8 inset;
+        box-shadow: 0 0 10px 100px #fff inset;
+        background-color: red;
   }
 
 
@@ -193,13 +258,6 @@
         transition: background 0.3s 0s ease-in-out;
   }
 
-  /*.merck__input_button button::after {
-        content: " - Remember this";
-
-        position: absolute;
-        font-size: 2rem;
-  } */
-
   .merck__input_button button:hover {
     background-color: #f72a8d;
 
@@ -208,8 +266,6 @@
   .merck__input_button [type=button]:focus, [type=submit]:focus, button:focus {
     outline: none !important;
   }
-
-
 
   .merck__input_button img{
       margin-left: 5px;
@@ -223,4 +279,17 @@
     background-size: contain;*/
 }
 
+
+/*Sweet alert */
+
+.swal2-html-container {
+    font-size: .8rem !important;
+}
+
+
+@media(min-width:768px){
+    .swal2-html-container {
+        font-size: .9rem !important;
+    }
+}
 
