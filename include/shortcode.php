@@ -23,13 +23,14 @@ domicilio, distrito, ciudad o región ingresando a:
                     <div class="merck__input_content">
                         <div class="bg-select">
                             <select class="merck__input input_select" id="merck_map_select_id">
-                                <option class="option" selected value="">
+                                <option class="option" selected hidden disabled value="">
                                     <span> Selecionar</span>
                                 </option>  
                                 <option class="option" value="Endocrinólogo">
-                                    <span>Endocrinólogo</span>
+                                    <span >Endocrinólogo</span>
                                 </option>   
                             </select>
+                           
                         </div>
 
                         <div class="merck__input merck__input_button">
