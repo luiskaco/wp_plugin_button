@@ -14,7 +14,7 @@ function merck_shortcode( $atts ){
             <div class="merck__container" id="merck_container_plugin_id">
                 <div class="merck__content">   
      
-                    <div>
+                    <div class="container-description-select">
                         <h3>
                         Encuentra al <span>médico especialista</span> mas cercano a tu 
 domicilio, distrito, ciudad o región ingresando a:
